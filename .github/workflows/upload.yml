@@ -1,0 +1,21 @@
+name: Deploy to AWS
+on: [push]
+jobs:
+  deploy_source:
+    name: Build and deploy to AWS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install zip
+        uses: montudor/action-zip@v0.1.0
+      - name: Zip output
+        run: zip -qq -r ./bundle.zip ./
+        working-directory: api
+      - name: Upload zip
+        uses: appleboy/lambda-action@master
+        with:
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: eu-west-3
+          function_name: genshin_crop
+          zip_file: ./api/bundle.zip
