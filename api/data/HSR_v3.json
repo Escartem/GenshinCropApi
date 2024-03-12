@@ -9,7 +9,7 @@
 	"caelus_destruction": [["Caelus", "Trailblazer", "Male Trailblazer"], 5],
 	"caelus_preservation": [["Caelus", "Trailblazer", "Male Trailblazer"], 5],
 	"clara": [["Clara", "Svarog"], 5],
-	"dan_feng": [["Dan Feng", "Imbibitor Lunae", "Dan Heng"], 5],
+	"dan_feng": [["Dan Feng", "Imbibitor Lunae", "Dan Heng", "Daniel"], 5],
 	"dan_heng": ["Dan Heng", 4],
 	"dr_ratio": [["Dr Ratio", "Ratio"], 5],
 	"fu_xuan": ["Fu Xuan", 5],
@@ -26,7 +26,7 @@
 	"luka": ["Luka", 4],
 	"luocha": ["Luocha", 5],
 	"lynx": ["Lynx", 4],
-	"march_7th": ["March 7th", 4],
+	"march_7th": [["March 7th", "March"], 4],
 	"misha": ["Misha", 4],
 	"natasha": ["Natasha", 4],
 	"pela": ["Pela", 4],
@@ -49,6 +49,6 @@
 	"OVERRIDES": {
 		"CHARS_RENAMES": [["caelus_destruction", "caelus"], ["stelle_destruction", "stelle"]],
 		"CHARS_EXCLUDES": ["caelus_preservation", "stelle_preservation"],
-		"NAMES_EXCLUDES": [["clara", ["Svarog"]], ["sparkle", ["Sparkles"]], ["dan_feng", ["Dan Heng"]]]
+		"NAMES_EXCLUDES": [["clara", ["Svarog"]], ["sparkle", ["Sparkles"]], ["dan_feng", ["Dan Heng", "Daniel"]]]
 	}
 }
