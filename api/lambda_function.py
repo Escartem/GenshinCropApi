@@ -11,7 +11,7 @@ def lambda_handler(event, context):
 	if path[0] == "char":
 		if path[1] == "gi":
 			return splash.ys_gen()
-		elif path[1] == "gi":
+		elif path[1] == "sr":
 			return splash.hsr_gen()
 	
 	# char result
