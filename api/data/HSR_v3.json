@@ -1,7 +1,9 @@
 {
+	"acheron": ["Acheron", 5],
 	"argenti": ["Argenti", 5],
 	"arlan": ["Arlan", 4],
 	"asta": ["Asta", 4],
+	"aventurine": ["Aventurine", 5],
 	"bailu": ["Bailu", 5],
 	"black_swan": ["Black Swan", 5],
 	"blade": ["Blade", 5],
@@ -13,6 +15,7 @@
 	"dan_heng": ["Dan Heng", 4],
 	"dr_ratio": [["Dr Ratio", "Ratio"], 5],
 	"fu_xuan": ["Fu Xuan", 5],
+	"gallagher": ["Gallagher", 4],
 	"gepard": ["Gepard", 5],
 	"guinaifen": ["Guinaifen", 4],
 	"hanya": ["Hanya", 4],
