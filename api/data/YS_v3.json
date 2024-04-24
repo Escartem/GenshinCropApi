@@ -4,6 +4,7 @@
 	"alhaitham": ["Alhaitham", 5],
 	"aloy": ["Aloy", 5],
 	"amber": ["Amber", 4],
+	"arlecchino": [["Arlecchino", "Father"], 5],
 	"ayaka": [["Ayaka", "Kamisato Ayaka"], 5],
 	"ayato": [["Ayato", "Kamisato Ayato"], 5],
 	"baizhu": ["Baizhu", 5],
@@ -82,6 +83,6 @@
 	"OVERRIDES": {
 		"CHARS_RENAMES": [],
 		"CHARS_EXCLUDES": [],
-		"NAMES_EXCLUDES": [["raiden", ["Raiden Shogun", "Shogun Raiden"]], ["kokomi", ["Kok"]]]
+		"NAMES_EXCLUDES": [["raiden", ["Raiden Shogun", "Shogun Raiden"]], ["kokomi", ["Kok"]], ["arlecchino": ["Father"]]]
 	}
 }
