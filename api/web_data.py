@@ -22,10 +22,10 @@ def web_data(event):
 				"char_ys": "char/gi",
 				"char_hsr": "char/sr",
 				"map_ys": "map",
-				"db_base": "https://bluedb.escartem.eu.org/gcrop",
-				"tile_ys": "ys/map",
-				"cards_ys": "ys/card",
-				"cards_hsr": "hsr/card"
+				"db_base": "https://ua4e.escartem.eu.org",
+				"tile_ys": "hk4e/map",
+				"cards_ys": "hk4e/face",
+				"cards_hsr": "hkrpg/face"
 			},
 		}
 		
