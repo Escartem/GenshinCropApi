@@ -4,7 +4,7 @@ from json_utils import *
 from image_utils import *
 
 
-DB_URL = "https://bluedb.escartem.eu.org/gcrop/ys/map"
+DB_URL = f'{fetch_json("config")["DB_URL"]}/hk4e/map'
 
 
 def map(id):

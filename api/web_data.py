@@ -15,19 +15,7 @@ def web_data(event):
 	# live
 	elif version == "3":
 		# global
-		data["data"] = {
-			"ver": "3.0.0",
-			"paths": {
-				"api_base": "https://api.escartem.eu.org/gcrop",
-				"char_ys": "char/gi",
-				"char_hsr": "char/sr",
-				"map_ys": "map",
-				"db_base": "https://ua4e.escartem.eu.org",
-				"tile_ys": "hk4e/map",
-				"cards_ys": "hk4e/face",
-				"cards_hsr": "hkrpg/face"
-			},
-		}
+		data["data"] = fetch_json("config")["web"]
 		
 		# sr
 		data["sr"] = {

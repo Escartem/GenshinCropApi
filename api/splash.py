@@ -5,7 +5,7 @@ from json_utils import *
 from image_utils import *
 
 
-DB_URL = "https://bluedb.escartem.eu.org/gcrop"
+DB_URL = fetch_json("config")["DB_URL"]
 
 
 def gen(json_file, game, crop_data):
@@ -20,7 +20,8 @@ def gen(json_file, game, crop_data):
 
 	# prepare img
 	file_format = "png" if game[0] == "ys" else "webp"
-	char_img = fetch_image(f"{DB_URL}/{game[0]}/splash/{curr_char}.{file_format}")
+	new_game = "hk4e" if game[0] == "ys" else "hkrpg"
+	char_img = fetch_image(f"{DB_URL}/{new_game}/splash/{curr_char}.{file_format}")
 	char_size = char_img.size
 	
 	# bad crop override as in this is a bad way to do this
@@ -62,7 +63,8 @@ def gen_result(game, result):
 	rid = b64decode(result).decode("utf-8").split(".")
 
 	file_format = "png" if game == "ys" else "webp"
-	char_url = f"{DB_URL}/{game}/splash/{rid[0]}.{file_format}"
+	new_game = "hk4e" if game == "ys" else "hkrpg"
+	char_url = f"{DB_URL}/{new_game}/splash/{rid[0]}.{file_format}"
 
 	result_img = fetch_image(char_url)
 
