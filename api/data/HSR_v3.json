@@ -26,6 +26,7 @@
 	"hook": ["Hook", 4],
 	"huohuo": ["Huohuo", 5],
 	"jade": ["Jade", 5],
+	"jiaoqiu": ["Jiaoqiu", 5],
 	"jing_yuan": ["Jing Yuan", 5],
 	"jingliu": ["Jingliu", 5],
 	"kafka": ["Kafka", 5],
@@ -33,6 +34,7 @@
 	"luocha": ["Luocha", 5],
 	"lynx": ["Lynx", 4],
 	"march_7th": [["March 7th", "March"], 4],
+	"march_7th_imaginary": [["March 7th Imaginary", "March 7th", "March"], 4],
 	"misha": ["Misha", 4],
 	"natasha": ["Natasha", 4],
 	"pela": ["Pela", 4],
@@ -53,6 +55,7 @@
 	"xueyi": ["Xueyi", 4],
 	"yanqing": ["Yanqing", 5],
 	"yukong": ["Yukong", 4],
+	"yunli": ["Yunli", 5],
 	"OVERRIDES": {
 		"CHARS_RENAMES": [["caelus_destruction", "caelus"], ["stelle_destruction", "stelle"]],
 		"CHARS_EXCLUDES": ["caelus_preservation", "stelle_preservation"],
