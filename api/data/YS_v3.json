@@ -91,6 +91,6 @@
 	"OVERRIDES": {
 		"CHARS_RENAMES": [],
 		"CHARS_EXCLUDES": [],
-		"NAMES_EXCLUDES": [["raiden", ["Raiden Shogun", "Shogun Raiden"]], ["kokomi", ["Kok"]], ["arlecchino", ["Father"]], ["lumine": ["Luminaire"]]]
+		"NAMES_EXCLUDES": [["raiden", ["Raiden Shogun", "Shogun Raiden"]], ["kokomi", ["Kok"]], ["arlecchino", ["Father"]], ["lumine", ["Luminaire"]]]
 	}
 }
