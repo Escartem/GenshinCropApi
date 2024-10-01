@@ -6,11 +6,11 @@
     		"char_ys": "char/gi",
     		"char_hsr": "char/sr",
     		"map_ys": "map",
-    		"db_base": "https://ua4e.escartem.eu.org",
+    		"db_base": "https://ua4e.escartem.moe",
     		"tile_ys": "hk4e/map",
     		"cards_ys": "hk4e/face",
     		"cards_hsr": "hkrpg/face"
     	}
     },
-    "DB_URL": "https://ua4e.escartem.eu.org"
+    "DB_URL": "https://ua4e.escartem.moe"
 }
