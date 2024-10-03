@@ -2,7 +2,7 @@
     "web": {
         "ver": "3.0.0",
     	"paths": {
-    		"api_base": "https://api.escartem.eu.org/gcrop",
+    		"api_base": "https://api.escartem.moe/gcrop",
     		"char_ys": "char/gi",
     		"char_hsr": "char/sr",
     		"map_ys": "map",
