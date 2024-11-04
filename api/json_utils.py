@@ -76,7 +76,7 @@ def create_splash_headers(char, crop, aliases, result):
 
 def create_result_url(game, char, crop):
 	result_data = f'{char}.{crop[0]}.{crop[1]}.{crop[2]}.{crop[3]}'
-	result_url = f"https://api.escartem.eu.org/gcrop/result/{game}{encode_data(result_data)}"
+	result_url = f"https://api.escartem.moe/gcrop/result/{game}{encode_data(result_data)}"
 
 	return result_url
 
