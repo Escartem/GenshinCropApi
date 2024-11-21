@@ -10,7 +10,23 @@ def lambda_handler(event, context):
 	# char
 	if path[0] == "char":
 		if path[1] == "gi":
-			return splash.ys_gen()
+			if event["httpMethod"] == "OPTIONS":
+				return {
+					'statusCode': 204,
+					'headers': {
+						'Access-Control-Allow-Origin': '*',
+						'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+						'Access-Control-Allow-Headers': 'Content-Type, regions',
+						'Access-Control-Allow-Credentials': 'true'  # Optional
+					}
+				}
+
+			regions = None
+
+			if "regions" in event["headers"]:
+				regions = event["headers"]["regions"]
+
+			return splash.ys_gen(regions)
 		elif path[1] == "sr":
 			return splash.hsr_gen()
 	

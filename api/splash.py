@@ -8,10 +8,15 @@ from image_utils import *
 DB_URL = fetch_json("config")["DB_URL"]
 
 
-def gen(json_file, game, crop_data):
+def gen(json_file, game, crop_data, regions=None):
 	# choose char
 	all_characters = fetch_json(json_file)
-	curr_char = choice(list(all_characters)[:-1])
+	temp_choose = list(all_characters)[:-1]
+
+	if regions:
+		temp_choose = [key for key, value in all_characters.items() if key != "OVERRIDES" and value[-1] in regions.split(",")]
+
+	curr_char = choice(temp_choose)
 
 	# char meta
 	# TODO: ignore overrides
@@ -38,7 +43,7 @@ def gen(json_file, game, crop_data):
 	
 	return return_image(headers, rendered_img)
 
-def ys_gen():
+def ys_gen(regions):
 	# this is bad
 	crop_data = [
 		(270, 0),
@@ -47,7 +52,7 @@ def ys_gen():
 		(100, 200)
 	]
 	
-	return gen("YS_v3", ["ys", "y"], crop_data)
+	return gen("YS_v3", ["ys", "y"], crop_data, regions=regions)
 
 def hsr_gen():
 	crop_data = [

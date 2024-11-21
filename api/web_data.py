@@ -25,8 +25,9 @@ def web_data(event):
 		
 		# ys
 		data["ys"] = {
-			"ver": "2.4.2",
-			"chars": apply_override(fetch_json("YS_v3"))
+			"ver": "2.5.0",
+			"chars": apply_override(fetch_json("YS_v3")),
+			"regions": {"Md": "Mondstadt", "Ly": "Liyue", "Dq": "Inazuma", "Xm": "Sumeru", "Fd": "Fontaine", "Nt": "Natlan"}
 		}
 		
 		# map
